@@ -1,0 +1,64 @@
+  <div class="items row g-4 row-cols-lg-3">
+                <div class="">
+                  <div class="item position-relative" >
+                    <img src="./images/imgs/portfolio/2.jpg" alt="port" class="w-100">
+                    <div class="layer position-absolute">
+                      <p>web design</p>
+                      <div class="d-flex flex-row ">
+                        <a href="#"class="rounded-circle"> 
+                          <i class="fa fa-link-slash"></i>
+                        </a>
+                        <a href="#" class="rounded-circle"> <i class="fa fa-search-plus"></i></a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                 <div class="">
+                  <div class="item position-relative" >
+                    <img src="./images/imgs/portfolio/3.jpg" alt="port" class="w-100">
+                    <div class="layer position-absolute">
+                      <p>web design</p>
+                      <div class="d-flex flex-row ">
+                        <a href="#"class="rounded-circle"> 
+                          <i class="fa fa-link-slash"></i>
+                        </a>
+                        <a href="#" class="rounded-circle"> <i class="fa fa-search-plus"></i></a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="">
+                  <div class="item position-relative" >
+                    <img src="./images/imgs/portfolio/4.jpg" alt="port" class="w-100">
+                    <div class="layer position-absolute">
+                      <p>web design</p>
+                      <div class="d-flex flex-row ">
+                        <a href="#"class="rounded-circle"> 
+                          <i class="fa fa-link-slash"></i>
+                        </a>
+                        <a href="#" class="rounded-circle"> <i class="fa fa-search-plus"></i></a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="">
+                  <div class="item position-relative" >
+                    <img src="./images/imgs/portfolio/5.jpg" alt="port" class="w-100">
+                    <div class="layer position-absolute">
+                      <p>web design</p>
+                      <div class="d-flex flex-row ">
+                        <a href="#"class="rounded-circle"> 
+                          <i class="fa fa-link-slash"></i>
+                        </a>
+                        <a href="#" class="rounded-circle"> <i class="fa fa-search-plus"></i></a>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>

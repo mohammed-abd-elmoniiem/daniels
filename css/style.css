@@ -1,0 +1,774 @@
+:root{
+    --main-color:#1c1c1c;
+    --white-color:#ffffff;
+    --point-clor:#e5e5e5;
+    --bg-icon-color:#f4f4f4;
+    --p-color:#748182;
+    --title-color:#343434;
+    --link-color:#111111;
+    --layer-color:#000000ab;
+    --navs-tabs-color:#222222;
+    --bg-white-2:#f7f7f7;
+    
+    --bg-card:#5c5c5c;
+
+    --font-mons:"Montserrat",
+        sans-serif;
+    --font-poppin:"Poppins",
+        sans-serif;
+
+
+
+    --dura:0.5s;
+
+   
+}
+
+.centeralize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+     font-family: var(--font-poppin);
+}
+
+
+/* header style */
+main section header *{
+    /* border: 1px solid red; */
+}
+
+main section header h2{
+    color: var(--title-color);
+    font-family: var(--font-mons);
+    font-weight: 900;
+    font-size: 40px;
+
+    width: fit-content;
+    z-index: 1;
+    margin:40px 0;
+}
+
+main section header h2::before{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 30px;
+    background:  radial-gradient(circle ,var(--point-clor) 20%,transparent 20% 100%);
+    background-size: 10px 10px;
+    position: absolute;
+    top: 50%;
+    right:0px;
+    z-index: -1;
+}
+
+
+
+/* end of the globals */
+
+/* start of the navbars */
+nav.navbar{
+   color: var(--white-color) !important;
+  
+   z-index: 99999;
+    position: absolute;
+        right: 0;
+        left: 0;
+        top: 30px !important;
+}
+
+nav.navbar a.navbar-brand{
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800 !important;
+    font-family: var(--font-mons);
+}
+nav.navbar button i{
+    font-size: 22px;
+    color: var(--white-color);
+  
+}
+.navbar-toggler:focus {
+box-shadow: none !important;
+}
+
+nav.navbar div.navbar-collapse{
+background-color: var(--white-color);
+}
+nav.navbar ul li{
+    margin-inline: 15px;
+    text-align: center;
+   
+}
+
+nav.navbar ul li a{
+    padding-inline: 0 !important;
+    display: block;
+    color: var(--link-color);
+    position: relative;
+    text-transform: capitalize;
+    font-size: 14px ;
+    font-weight: 400;
+    width: min-content;
+    margin-inline: auto;
+    
+}
+nav.navbar ul li a:hover{
+   
+    color: var(--link-color) !important;
+   
+}
+nav.navbar ul li a.nav-link::after{
+    content:" ";
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--link-color);
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transition: width var(--dura);
+   
+}
+nav.navbar ul li a.nav-link.active::after {
+  
+    width: 100%;
+ 
+
+}
+nav.navbar ul li a:hover{
+    color: var(--white-color);
+}
+nav.navbar:not(:has(a[href="#home"].active)) {
+    position: fixed !important;
+    background-color: var(--white-color);
+    top: 0 !important;
+    box-shadow: 0 -45px 65px var(--navs-tabs-color);
+}
+
+nav.navbar:not(:has(a[href="#home"].active))  a ,
+nav.navbar:not(:has(a[href="#home"].active)) i{
+    color: var(--link-color);
+}
+/* end of navbar*/
+
+
+
+/* home */
+
+
+header.home *{
+    /* border: 1px solid green; */
+}
+
+
+header.home{
+    background-image:linear-gradient(var(--layer-color) , var(--layer-color)), url('../images/imgs/bg.jpg');
+    color: var(--white-color);
+  
+    background-size: cover;
+    padding: 200px ;
+}
+
+header.home div div p{
+    font-size: 55px;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+
+header.home div div h2{
+        font-size: 60px;
+            text-transform: capitalize;
+            font-weight: 200;
+            font-family: var(--font-mons);
+}
+header.home div div ul{
+    list-style-type: none;
+   
+    
+}
+header.home div div ul li{
+    background-color: #00000085;
+    width: 35px;
+    height: 35px;
+    
+    border-radius: 50%;
+    margin-inline: 5px;
+}
+header.home div div ul li a{
+    display: block;
+    color: var(--white-color);
+    font-size: 14px;
+    text-align: center;
+   padding-top: 8px;
+}
+
+/* end of the home section */
+
+/* start of the about */
+
+main section.about *{
+    /* border: blue 1px solid; */
+}
+main section.about {
+    padding-block: 80px;
+}
+
+
+main section.about div.img-profile img{
+    width: 100%;
+   
+    
+}
+
+main section.about div.img-profile .bg-layer
+{
+    
+     
+        width: 90%;
+        height: 100%;
+        background: radial-gradient(circle, var(--point-clor) 20%, transparent 20% 100%);
+        background-size: 10px 10px;
+        position: absolute;
+        top: 35px;
+        left:-35px;
+        z-index: -1;
+}
+
+
+main section.about div.about-info h2{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: var(--font-mons);
+    color: var(--title-color);
+}
+
+main section.about div.about-info strong{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #999999;
+}
+
+main section.about div.about-info p{
+    color: var(--p-color);
+    font-size: 15px;
+    
+}
+main section.about div.about-info p span{
+    font-weight: 700;
+}
+
+main section.about div.about-info div.ranges div.progress{
+    height: 25px;
+    box-shadow: inset 0 0 8px  #00000046;
+    background-color: var(--white-color);
+    
+
+}
+
+main section.about div.about-info div.ranges div.progress div.progress-bar{
+    background-color:var(--main-color) !important;
+    height: 100%;
+ border-radius: 8px;
+    
+}
+main section.about div.about-info div.ranges div.progress div.progress-bar p{
+    color: var(--white-color) !important;
+    font-family: var(--font-mons);
+    text-transform: capitalize;
+    font-size: 13px;
+    margin: 0;
+    padding:  0 8px;
+   
+}
+main section.about div.about-info div.btns{
+    margin-top: 60px;
+}
+    
+main section.about div.about-info div.btns a{
+     padding: 12px 30px; 
+      font-size: 13px;
+      border: var(--main-color) 1px solid;
+      transition: color var(--dura) , background-color var(--dura);
+}
+main section.about div.about-info div.btns a:first-child,
+main section.about div.about-info div.btns a:last-child:hover
+{
+    color: var(--white-color);
+    background-color: var(--main-color);
+   
+   
+}
+main section.about div.about-info div.btns a:last-child,
+main section.about div.about-info div.btns a:first-child:hover{
+color: var(--main-color);
+
+    background-color:var(--white-color);
+}
+/* end of the about */
+
+
+
+
+/* start of the services section */
+main section.services{
+    padding: 50px 0;
+    background-color: var(--bg-white-2);
+}
+
+main section.services div.services-items{
+    margin-top: 50px;
+}
+main section.services div.services-items div.services-item {
+    background-color: var(--white-color);
+}
+main section.services div.services-items div.services-item i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: var(--bg-icon-color);
+    font-size: 30px;
+    transition: color var(--dura) , background-color var(--dura);
+}
+
+main section.services div.services-items div.services-item h3{
+    margin-block: 15px;
+    font-size: 18px;
+    color: var(--title-color);
+   
+
+}
+main section.services div.services-items div.services-item:hover i{
+    background-color: var(--main-color);
+    color: var(--bg-white-2);
+}
+
+main section.services div.services-items div.services-item p{
+    color: var(--p-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+/* end of the services */
+
+
+/* start of the portfolio */
+main section.works{
+    padding: 60px 0;
+}
+main section.works *{
+    /* border: solid 1px #915eff; */
+}
+
+main section.works ul.nav button{
+    font-size: 16px;
+    font-weight: 700;
+   
+    color: var(--navs-tabs-color);
+    text-transform: capitalize;
+    border: none !important;
+    position: relative;
+    padding-inline:0;
+    margin-inline: 15px;
+}
+main section.works ul.nav button.nav-link.active{
+    background-color: inherit !important;
+    color: var(--navs-tabs-color);
+}
+main section.works ul.nav button::before{
+    content: "";
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--navs-tabs-color);
+    position: absolute;
+    bottom: 8px;
+    transition:width var(--dura) ;
+}
+
+main section.works ul.nav button.active::before{
+    width: 100%;
+}
+
+
+main section.works div.tab-content div .items .item .layer{
+    inset: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white-color);
+    opacity: 0;
+    transform: scaleY(0.90);
+    transition: transform var(--dura) , opacity var(--dura);
+    
+
+
+
+}
+
+main section.works div.tab-content div .items .item .layer p{
+    color: var(--main-color);
+    font-family: var(--font-mons);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: translateY(-15px);
+    transition: transform var(--dura);
+}
+main section.works div.tab-content div .items .item .layer div{
+    transform: translateY(15px);
+    transition: transform var(--dura), opacity var(--dura);
+}
+main section.works div.tab-content div .items .item .layer a{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-size: 14px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+  
+}
+
+main section.works div.tab-content div .items .item .layer:hover {
+    opacity: 0.9;
+    transform: scaleY(1);
+}
+main section.works div.tab-content div .items .item .layer:hover div,
+main section.works div.tab-content div .items .item .layer:hover p{
+    transform: translateY(0);
+}
+
+
+/* end of the portfolio */
+
+
+/* start of the clients */
+
+main section.clients{
+    background-color: var(--bg-white-2);
+    padding: 50px 0;
+}
+
+main section.clients *{
+    /* border:solid 1px red; */
+    /* color: #111111 !important; */
+}
+
+main section.clients .carousel{
+    /* min-height: 600px; */
+}
+
+main section.clients .carousel-inner div.image{
+    width: 100px;
+    height: 100px;
+}
+main section.clients .carousel-inner div.image img{
+    width: 100%;
+}
+
+main section.clients .carousel-inner p{
+    color: var(--p-color) !important;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+   
+}
+
+main section.clients .carousel-inner strong{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--font-mons);
+    color: var(--link-color);
+}
+
+main section.clients .carousel-inner span{
+    color: var(--p-color) !important;
+        font-size: 12px;
+        font-weight: 600;
+        
+}
+
+main section.clients .carousel button{
+    background-color: var(--title-color);
+    width: 50px;
+    height: 50px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #34343494;
+}
+
+main section.clients .carousel div.carousel-indicators{
+    position: static !important;
+}
+
+main section.clients .carousel div.carousel-indicators button{
+   border-radius: 50%;
+   width: 10px;
+   height: 10px;
+}
+/* end of the clients */
+
+
+/* start of the numbers */
+
+
+/* end of the numbers */
+section.numbers {
+    padding: 50px 0;
+}
+
+section.numbers div i {
+    font-size: 30px;
+    /* font-weight: 400; */
+    color: var(--title-color);
+    margin-top: 15px;
+}
+section.numbers div span{
+    color: var(--title-color);
+    font-size: 30px;
+    font-weight: 900;
+    font-family: var(--font-mons);
+    margin-block: 15px;
+}
+
+section.numbers div p{
+    font-size: 15px;
+    color: var(--p-color);
+    font-weight: 600;
+}
+/* start of the team */
+
+main section.team{
+    padding: 50px 0;
+    background-color: var(--bg-white-2);
+}
+main section.team *{
+    /* border: 1px solid red; */
+}
+main section.team div.team-developers div.team-developer .card .image-layer .layer{
+    inset: 5px;
+    background-color: var(--white-color);
+    margin-bottom: 0;
+    transform: rotateY(180deg) scale(0.3);
+    opacity: 0;
+    transition: transform var(--dura) , opacity var(--dura);
+    
+}
+main section.team div.team-developers div.team-developer .card .image-layer:hover .layer{
+    transform: rotateY(0deg) scale(1);
+    opacity: 1;
+}
+main section.team div.team-developers div.team-developer .card .image-layer .layer li{
+    
+    width: 40px;
+    height: 40px;
+    
+    margin: 0 5px;
+}
+main section.team div.team-developers div.team-developer .card .image-layer .layer li a{
+    color: var(--white-color);
+    background-color: var(--main-color);
+    font-size: 20px;
+    border:1px var(--main-color) solid;
+    width: 100%;
+    height:100% ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: color var(--dura) , background-color var(--dura);
+}
+main section.team div.team-developers div.team-developer .card .image-layer .layer li a:hover{
+    color: var(--main-color);
+    background-color: var(--white-color);
+}
+main section.team div.team-developers div.team-developer .card-body{
+    background-color: var(--bg-card);
+    color: var(--white-color);
+     font-family: var(--font-mons);
+}
+main section.team div.team-developers div.team-developer h5{
+    font-size: 25px;
+    font-weight: 500;
+   
+}
+
+main section.team div.team-developers div.team-developer div.card-body p{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* end of the team */
+
+
+/* start of the contact */
+section.contact *{
+    /* border: solid 1px lightcoral; */
+}
+section.contact{
+    padding: 50px 0;
+
+}
+section.contact div.contact-link div.icon{
+    width: 60px;
+    height: 60px;
+   
+   background-color: var(--bg-icon-color);
+   overflow: hidden;
+    transition: background-color var(--dura);
+
+}
+section.contact div.contact-link i{
+    
+    font-size: 25px;
+    color: var(--title-color);
+    transition: color var(--dura);
+    
+  
+}
+
+section.contact div.contact-link h5{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--font-mons);
+    color: var(--title-color);
+}
+
+section.contact div.contact-link address,
+section.contact div.contact-link p{
+    font-size: 15px;
+    color: var(--p-color);
+    font-weight: 400;
+}
+section.contact div.contact-link:hover i{
+    color:var(--bg-icon-color) ;
+}
+section.contact div.contact-link:hover div.icon{
+    background-color: var(--main-color);
+}
+
+section.contact div.contact-form input,
+section.contact div.contact-form textarea{
+    background-color: var(--bg-icon-color);
+    color: var(--title-color);
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+section.contact div.contact-form input:focus,
+section.contact div.contact-form textarea:focus{
+    outline: none;
+}
+section.contact div.contact-form input::placeholder,
+section.contact div.contact-form textarea::placeholder{
+    text-transform: capitalize;
+    padding-left: 8px;
+    color: var(--p-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+textarea{
+    resize: none;
+}
+
+section.contact div.contact-form button[type="submit"]{
+    color: var(--white-color);
+    background-color: var(--main-color);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 40px;
+    border: 1px var(--main-color) solid;
+    transition: color var(--dura ) ,background-color var(--dura);
+
+}
+
+section.contact div.contact-form button[type="submit"]:hover{
+    color: var(--main-color);
+    background-color: var(--white-color);
+}
+
+/* end of the contact */
+
+
+/* start of the footer */
+
+footer{
+    background-color: var(--main-color);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--p-color);
+}
+
+/* end of the footer */
+/* media query */
+
+
+@media screen and (min-width:770px){
+
+/* start of the navbars */
+    nav.navbar {
+        background-color: transparent !important;
+        color: var(--white-color) !important;
+        top: 30 !important;
+       
+    }
+
+ 
+
+    nav.navbar a.navbar-brand {
+        color: var(--white-color);
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 800 !important;
+        font-family: var(--font-mons);
+    }
+
+   
+
+  
+nav.navbar div.navbar-collapse {
+    background-color: transparent !important
+}
+
+nav.navbar:has(a[href="#home"].active) a[href="#home"] {
+
+      color: var(--white-color)!important; 
+
+  }
+
+  nav.navbar:has(a[href="#home"].active) ul li a.nav-link::after{
+    background-color:var(--white-color);
+  }
+nav.navbar:not(:has(a[href="#home"].active)) {
+background-color: var(--white-color) !important;
+}
+ nav.navbar:not(:has(a[href="#home"].active)) ul li a:hover{
+    color: var(--link-color) !important;
+ }
+    nav.navbar ul li a {
+       
+        color: var(--white-color);
+    
+    }
+
+    nav.navbar ul li a:hover {
+
+        color: var(--white-color) !important;
+
+    }
+
+
+    /* end of navbar*/
+    
+}
