@@ -214,16 +214,18 @@ header.home div div h2 span#looping{
 }
 header.home div div ul{
     list-style-type: none;
+    padding: 0;
+    gap: 8px;
    
     
 }
 header.home div div ul li{
-    background-color: #00000085;
+    background-color: #00000073;
     width: 35px;
     height: 35px;
     
     border-radius: 50%;
-    margin-inline: 5px;
+    /* margin-inline: 5px; */
 }
 header.home div div ul li a{
     display: block;
@@ -534,7 +536,7 @@ div#works-carousel div.carousel-indicators button.active::after{
     top: 50%;
     opacity: 1 !important;
     text-indent: 0;
-    right: 0px;
+    right: -10px;
     transform: translate(-50% , -50%);
 
     /* background-color: red; */
