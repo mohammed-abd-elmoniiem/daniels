@@ -240,25 +240,35 @@ main section.about {
 }
 
 
+main section.about div.img-profile *{
+    /* border: 1px solid green; */
+}
+main section.about div.img-profile .img{
+width: 100%;
+    max-width: 690px;
+}
 main section.about div.img-profile img{
     width: 100%;
+    
     transform: translateX(10px);
+    
    
     
 }
-
-main section.about div.img-profile .bg-layer
-{
+main section.about div.img-profile .img::before{
+    content: "";
+    display: block;
+    width: 100%;
     
-     
-        width: 90%;
-        height: 100%;
-        background: radial-gradient(circle,  var(--point-clor) 20%, transparent 20% 100%);
-        background-size: 10px 10px;
-        position: absolute;
-        top: 30px;
-        left:-20px;
-        z-index: -1;
+    height: 100%;
+    background: radial-gradient(circle, var(--point-clor) 20%, transparent 20% 100%);
+    background-size: 10px 10px;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    z-index: -1;
+    padding: 0;
+
 }
 
 
