@@ -60,9 +60,7 @@ body:has(a.nav-link.active[href="#home"]) a.arrow-up {
 /* end return up button */
 
 /* header style */
-main section header *{
-    /* border: 1px solid red; */
-}
+
 
 main section header h2{
     color: var(--title-color);
@@ -183,12 +181,6 @@ nav.navbar:not(:has(a[href="#home"].active)) i{
 
 /* home */
 
-
-header.home *{
-    border: 1px solid green;
-}
-
-
 header.home{
     background-image:linear-gradient(var(--layer-color) , var(--layer-color)), url('../images/imgs/bg.jpg');
     color: var(--white-color);
@@ -242,9 +234,7 @@ header.home div div ul li a{
 
 /* start of the about */
 
-main section.about *{
-    /* border: blue 1px solid; */
-}
+
 main section.about {
     padding-block: 80px;
 }
@@ -542,9 +532,6 @@ div#works-carousel div.carousel-indicators button.active::after{
     right: -10px;
     transform: translate(-50% , -50%);
 
-    /* background-color: red; */
-    /* height: 15px;
-    width: 30px; */
    
     color: var(--white-color);
 }
@@ -559,14 +546,9 @@ main section.clients{
     padding: 50px 0;
 }
 
-main section.clients *{
-    /* border:solid 1px red; */
-    /* color: #111111 !important; */
-}
 
-main section.clients .carousel{
-    /* min-height: 600px; */
-}
+
+
 
 main section.clients .carousel-inner div.image{
     width: 100px;
@@ -623,7 +605,7 @@ main section.clients .carousel div.carousel-indicators button{
 /* start of the numbers */
 
 
-/* end of the numbers */
+
 section.numbers {
     padding: 50px 0;
 }
@@ -647,15 +629,19 @@ section.numbers div p{
     color: var(--p-color);
     font-weight: 600;
 }
+
+
+/* end of the numbers */
+
+
+
 /* start of the team */
 
 main section.team{
     padding: 50px 0;
     background-color: var(--bg-white-2);
 }
-main section.team *{
-    /* border: 1px solid red; */
-}
+
 main section.team div.team-developers div.team-developer .card .image-layer .layer{
     inset: 5px;
     background-color: var(--white-color);
@@ -713,9 +699,7 @@ main section.team div.team-developers div.team-developer div.card-body p{
 
 
 /* start of the contact */
-section.contact *{
-    /* border: solid 1px lightcoral; */
-}
+
 section.contact{
     padding: 50px 0;
 
@@ -811,6 +795,8 @@ footer{
 }
 
 /* end of the footer */
+
+
 /* media query */
 
 
