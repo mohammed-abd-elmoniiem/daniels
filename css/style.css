@@ -185,7 +185,7 @@ nav.navbar:not(:has(a[href="#home"].active)) i{
 
 
 header.home *{
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 
@@ -196,7 +196,7 @@ header.home{
     background-size: cover;
     min-height: 100vh;
 
-    padding-top: 70px;
+    padding-top: 30px;
     
 }
 
