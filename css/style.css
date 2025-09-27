@@ -37,6 +37,27 @@ a{
     text-decoration: none !important;
 }
 
+/* return up button */
+a.arrow-up {
+    background-color: var(--main-color);
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    padding: 10px 5px;
+    transition: opacity 0.3s;
+}
+
+a.arrow-up i {
+    font-size: 20px;
+}
+
+body:has(a.nav-link.active[href="#home"]) a.arrow-up {
+
+    opacity: 0;
+}
+
+/* end return up button */
+
 /* header style */
 main section header *{
     /* border: 1px solid red; */
@@ -172,7 +193,8 @@ header.home{
     color: var(--white-color);
   
     background-size: cover;
-    padding: 200px ;
+    min-height: 100vh;
+    
 }
 
 header.home div div p{
@@ -182,10 +204,13 @@ header.home div div p{
 }
 
 header.home div div h2{
-        font-size: 60px;
+        font-size: 30px;
             text-transform: capitalize;
             font-weight: 200;
             font-family: var(--font-mons);
+}
+header.home div div h2 span#looping{
+    font-weight: 400;
 }
 header.home div div ul{
     list-style-type: none;
@@ -466,7 +491,9 @@ div#works-carousel *{
 
 div#works-carousel i.fa-close{
     right: 50px;
-    top: 30px;
+    top: 20px;
+    color: var(--white-color);
+    z-index: 99999999;
 
 }
 
@@ -492,11 +519,28 @@ div#works-carousel div.carousel-indicators button{
 }
 .arrow-left{
     border: 20px solid;
-    border-color: transparent rgb(0, 0, 0) transparent transparent;
+    border-color: transparent var(--white-color) transparent transparent;
 }
 .arrow-right {
     border: 20px solid;
-    border-color: transparent  transparent transparent rgb(0, 0, 0);
+    border-color: transparent  transparent transparent var(--white-color);
+}
+
+div#works-carousel div.carousel-indicators button.active::after{
+    content: attr(data-slide-number) " of 6";
+    position: absolute;
+    display: block;
+    top: 50%;
+    opacity: 1 !important;
+    text-indent: 0;
+    right: 0px;
+    transform: translate(-50% , -50%);
+
+    /* background-color: red; */
+    /* height: 15px;
+    width: 30px; */
+   
+    color: var(--white-color);
 }
 
 /* end of the portfolio */
@@ -820,5 +864,11 @@ background-color: var(--white-color) !important;
 
 
     /* end of navbar*/
+
+    /* start of the home */
+        header.home div div h2 {
+            font-size: 44px;
+            
+        }
     
 }
